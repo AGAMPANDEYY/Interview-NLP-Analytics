@@ -84,3 +84,9 @@ result = {'type': 'number', 'value': average_eye_offset}
 2024-09-22 08:26:52 [INFO] Executing Step 7: ResultValidation
 2024-09-22 08:26:52 [INFO] Answer: {'type': 'number', 'value': 15.8013625}
 2024-09-22 08:26:52 [INFO] Executing Step 8: ResultParsing
+2024-09-22 11:29:22 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-22 11:29:22 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-22 11:30:18 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-22 11:30:18 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-22 11:30:26 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-22 11:30:26 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
