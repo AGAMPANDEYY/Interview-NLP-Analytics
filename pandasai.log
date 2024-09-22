@@ -90,3 +90,35 @@ result = {'type': 'number', 'value': average_eye_offset}
 2024-09-22 11:30:18 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2024-09-22 11:30:26 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2024-09-22 11:30:26 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-22 18:09:53 [INFO] Question: what is the average offset of the eye?
+2024-09-22 18:09:53 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-09-22 18:09:53 [INFO] Prompt ID: 4d8863e4-3e5f-4236-992b-8ee8f550cfcc
+2024-09-22 18:09:54 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-22 18:09:54 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-22 18:09:54 [INFO] Executing Step 1: CacheLookup
+2024-09-22 18:09:54 [INFO] Using cached response
+2024-09-22 18:09:54 [INFO] Executing Step 2: PromptGeneration
+2024-09-22 18:09:54 [INFO] Executing Step 2: Skipping...
+2024-09-22 18:09:54 [INFO] Executing Step 3: CodeGenerator
+2024-09-22 18:09:54 [INFO] Executing Step 3: Skipping...
+2024-09-22 18:09:54 [INFO] Executing Step 4: CachePopulation
+2024-09-22 18:09:54 [INFO] Executing Step 4: Skipping...
+2024-09-22 18:09:54 [INFO] Executing Step 5: CodeCleaning
+2024-09-22 18:09:54 [INFO] 
+Code running:
+```
+eye_offsets = []
+for df in dfs:
+    if 'eye_offset' in df.columns:
+        eye_offsets.extend(df['eye_offset'].tolist())
+average_eye_offset = sum(eye_offsets) / len(eye_offsets)
+result = {'type': 'number', 'value': average_eye_offset}
+        ```
+2024-09-22 18:09:54 [INFO] Executing Step 6: CodeExecution
+2024-09-22 18:09:54 [INFO] Executing Step 7: ResultValidation
+2024-09-22 18:09:54 [INFO] Answer: {'type': 'number', 'value': 15.8013625}
+2024-09-22 18:09:54 [INFO] Executing Step 8: ResultParsing
+2024-09-22 18:10:01 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-22 18:10:01 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-22 18:19:40 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-09-22 18:19:40 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
