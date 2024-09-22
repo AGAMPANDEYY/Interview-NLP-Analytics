@@ -1,0 +1,86 @@
+2024-09-22 08:26:48 [INFO] Question: what is the average offset of the eye?
+2024-09-22 08:26:48 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-09-22 08:26:48 [INFO] Prompt ID: 8e238c4b-5cc8-436f-bc02-f58aa3f612c0
+2024-09-22 08:26:48 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-22 08:26:48 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-22 08:26:48 [INFO] Executing Step 1: CacheLookup
+2024-09-22 08:26:48 [INFO] Executing Step 2: PromptGeneration
+2024-09-22 08:26:49 [INFO] Querying without using training data.
+2024-09-22 08:26:50 [INFO] Querying without using training docs.
+2024-09-22 08:26:50 [INFO] Using prompt: <dataframe>
+dfs[0]:88x5
+movie_id,image_seq,gaze,blink,eye_offset
+93663f94-bf0a-4ce8-a29a-a5236cc7fe6a,15,0,0,37.4903
+93663f94-bf0a-4ce8-a29a-a5236cc7fe6a,29,1,0,-0.8867
+93663f94-bf0a-4ce8-a29a-a5236cc7fe6a,46,0,0,0.7693
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ what is the average offset of the eye?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-09-22 08:26:50 [INFO] Executing Step 3: CodeGenerator
+2024-09-22 08:26:52 [INFO] Prompt used:
+            None
+            
+2024-09-22 08:26:52 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Calculate the average offset of the eye
+eye_offsets = []
+for df in dfs:
+    if 'eye_offset' in df.columns:
+        eye_offsets.extend(df['eye_offset'].tolist())
+
+average_eye_offset = sum(eye_offsets) / len(eye_offsets)
+
+# Declare result variable
+result = { "type": "number", "value": average_eye_offset }
+            ```
+            
+2024-09-22 08:26:52 [INFO] Executing Step 4: CachePopulation
+2024-09-22 08:26:52 [INFO] Executing Step 5: CodeCleaning
+2024-09-22 08:26:52 [INFO] 
+Code running:
+```
+eye_offsets = []
+for df in dfs:
+    if 'eye_offset' in df.columns:
+        eye_offsets.extend(df['eye_offset'].tolist())
+average_eye_offset = sum(eye_offsets) / len(eye_offsets)
+result = {'type': 'number', 'value': average_eye_offset}
+        ```
+2024-09-22 08:26:52 [INFO] Executing Step 6: CodeExecution
+2024-09-22 08:26:52 [INFO] Executing Step 7: ResultValidation
+2024-09-22 08:26:52 [INFO] Answer: {'type': 'number', 'value': 15.8013625}
+2024-09-22 08:26:52 [INFO] Executing Step 8: ResultParsing
