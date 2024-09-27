@@ -1,7 +1,7 @@
 # IBY_Round2
 Round2 assestment for Data Science Role Intern 
 
-# 🎯 Data Science Analysis (EDA) on Video Interview Dataset 🎯
+# Data Science Analysis (EDA) on Video Interview Dataset.
 
 Welcome to the **Interview Dataset Analysis** repository! This project takes you on an in-depth journey through a dataset containing emotional, visual, and transcript data for 10 interview candidates. Using cutting-edge data analysis techniques, we explore each candidate's performance, helping you make data-driven hiring decisions!
 
