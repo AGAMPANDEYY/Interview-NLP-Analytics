@@ -3,6 +3,9 @@ Round2 assestment for Data Science Role Intern
 
 # Data Science Analysis (EDA) on Video Interview Dataset.
 
+![image](https://github.com/user-attachments/assets/fb3b7f4c-9162-450e-8a76-8c66f690cc58)
+
+
 Welcome to the **Interview Dataset Analysis** repository! This project takes you on an in-depth journey through a dataset containing emotional, visual, and transcript data for 10 interview candidates. Using cutting-edge data analysis techniques, we explore each candidate's performance, helping you make data-driven hiring decisions!
 
 ## 📝 Dataset Breakdown
