@@ -1,6 +1,3 @@
-# IBY_Round2
-Round2 assestment for Data Science Role Intern 
-
 # Data Science Analysis (EDA) on Video Interview Dataset.
 
 ![image](https://github.com/user-attachments/assets/fb3b7f4c-9162-450e-8a76-8c66f690cc58)
